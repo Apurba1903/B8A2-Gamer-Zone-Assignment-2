@@ -266,6 +266,51 @@
     font-weight: 400;
 }
 
+.for-hover-affect {
+    position: relative;
+}
+
+.funny-video-image-size {
+    width: 15.313rem;
+    padding: 1.25rem 0rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.for-hover-affect:hover .overlay {
+    opacity: 1;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-container svg {
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+}
+
+.watch-now {
+    color: #FF42A5;
+    font-size: 18px;
+}
+
 /* Funny Video Styles Ends */
 
 
@@ -390,6 +435,7 @@
     height: 60vh;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
+
 .games-icons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -400,6 +446,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .games-icon-2ndline {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -410,6 +457,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .game-icon-btn {
     display: flex;
     justify-content: space-between;
@@ -426,10 +474,12 @@
     height: 4.375rem;
     cursor: pointer;
 }
-.game-icon-btn:hover{
+
+.game-icon-btn:hover {
     border-color: #FF42A5;
     color: #FF42A5;
 }
+
 /* Button Styles Ends */
 
 
@@ -494,4 +544,177 @@ li>a {
     font-size: 0.6rem;
     font-weight: 400;
 }
+
 /* Footer Styles End */
+
+
+
+
+/* Responsive Media Queries */
+/* For Mobile Devices */
+@media screen and (max-width: 425px) {
+
+    .navbar,
+    .menus,
+    .banner,
+    .we-are-gamer,
+    .funny-cards,
+    .play-instantly,
+    .career,
+    .services,
+    .socials,
+    .conditions {
+        flex-direction: column;
+    }
+
+    .navbar {
+
+        height: auto;
+        width: auto;
+        padding: 50px;
+    }
+
+    .banner-content {
+        height: auto;
+        width: auto;
+    }
+
+    .banner-content-items {
+        margin: 20px;
+    }
+
+    .banner-img-size {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .we-img {
+        width: 400px;
+        height: auto;
+    }
+
+    .we-are-gamer {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    .we-content {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .funny-video {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    .funny-cards {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .play-instantly {
+
+        height: auto;
+        padding: 20px;
+    }
+
+    .play-instantly-content {
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .play-instantly-img {
+        padding-left: 60px;
+    }
+
+    .play-instantly-image-size {
+        width: 300px;
+    }
+
+    .play-instantly-image-size-overlap {
+        width: 100px;
+        position: relative;
+        bottom: 75px;
+        right: 60px;
+    }
+
+    .career {
+        margin-top: 0px;
+        height: auto;
+    }
+
+    .career-content {
+        width: auto;
+        padding: 40px;
+    }
+
+    .career-img {
+        padding: 20px;
+    }
+
+    .career-img-size {
+        height: 400px;
+    }
+
+    .game-types-btn {
+        height: auto;
+    }
+
+    .btn-small-icon {
+        width: 30px;
+    }
+
+    .game-icon-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 1.2rem;
+        padding: 0.7rem 1.3rem;
+        font-size: 0.5rem;
+        font-weight: 800;
+        width: 3.336rem;
+        height: 1.094rem;
+    }
+
+    .games-icons {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .games-icon-2ndline{
+        padding-bottom: 20px;
+    }
+    footer{
+        height: auto;
+    }
+    .services {
+       gap: 20px;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    .socials {
+        justify-content: center;
+        gap: 10px;
+        padding: 20px
+    }
+    .conditions {
+        gap: 5px;
+        font-size: 0.6rem;
+        padding: 20px
+    }
+}
+
+
+
+/* For Tablet and Medium Devices */
+@media screen and (min-width: 425px) and (max-width: 768px) {}
