@@ -82,7 +82,7 @@
 }
 
 .banner-content {
-    background-image: url("/images/Group 14.png");
+    background-image: url("/images/group14.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 40rem;
@@ -742,5 +742,5 @@ li>a {
 
 /* For Tablet and Medium Devices */
 @media screen and (min-width: 425px) and (max-width: 768px) {
-    
+
 }
