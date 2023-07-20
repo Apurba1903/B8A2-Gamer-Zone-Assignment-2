@@ -82,7 +82,7 @@
 }
 
 .banner-content {
-    background-image: url("/images/group14.png");
+    background-image: url("../images/group14.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 40rem;
